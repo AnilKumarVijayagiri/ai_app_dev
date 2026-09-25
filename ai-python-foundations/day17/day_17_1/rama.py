@@ -2,7 +2,6 @@ from google import genai
 from google.genai import types
 import numpy as np
 
-client = genai.Client(api_key="AQ.Ab8RN6JhtdIZtEw5L2nGyoSteNVm_lxf7Ey8aGO4vlC9QU9fZw")
 with open("raamayana.txt", "r",encoding="utf-8") as file:
     ramayana_text = file.read()
 print("Ramayana file loaded successfully")
