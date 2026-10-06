@@ -1,8 +1,11 @@
 from google import genai
 from google.genai import types
 import numpy as np
+from pathlib import Path
 
-with open("raamayana.txt", "r",encoding="utf-8") as file:
+client = genai.Client()
+
+with open(Path(__file__).with_name("raamayana.txt"), "r", encoding="utf-8") as file:
     ramayana_text = file.read()
 print("Ramayana file loaded successfully")
 print("CHaracters",len(ramayana_text))
